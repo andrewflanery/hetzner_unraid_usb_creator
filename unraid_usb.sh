@@ -351,7 +351,7 @@ format_flash() {
 # download Unraid and copy to flash drive
 download_unraid() {
     echo -e "\e[1;34mDownloading Unraid...\e[0m"
-    wget -q --show-progress -O /tmp/unraid.zip ${unraid_download_url}
+    wget -q --show-progress -O /tmp/unraid.zip https://releases.unraid.net/dl/stable/7.2.4/d420678907b7dc595c47dc5c2482f42f6c83ab290570c358355d9df1f9001642/unRAIDServer-7.2.4-x86_64.zip
 
     echo -e "\e[1;34mDownload complete. Extracting...\e[0m"
     mkdir /tmp/unraid_extracted
